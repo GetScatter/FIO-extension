@@ -10,7 +10,7 @@
 					<h1>Add a key</h1>
 					<br>
 					<input placeholder="Enter a private key" v-model="privateKey" />
-					<button>Import</button>
+					<button @click="importKey">Import</button>
 					<br>
 					<br>
 					<button @click="generateKey">Generate New Key</button>
@@ -97,12 +97,19 @@
 				scatter.keychain.permissions = [];
 				this[Actions.SET_SCATTER](scatter);
 			},
-			async generateKey(){
+			async importKey(){
+				const plugin = PluginRepository.plugin('fio');
+				if(!plugin.validPrivateKey(this.privateKey)) return alert("Invalid private key");
+				const bufferPrivate = plugin.hexPrivateToBuffer(this.privateKey);
+				this.generateKey(bufferPrivate);
+			},
+			async generateKey(privateKey = null){
 				this.loading = true;
 				setTimeout(async () => {
 					const keypair = Keypair.placeholder();
 					keypair.blockchains = ['fio'];
 					await KeyPairService.generateKeyPair(keypair);
+					if(privateKey) keypair.privateKey = privateKey;
 					await KeyPairService.makePublicKeys(keypair);
 					keypair.setName();
 					await KeyPairService.saveKeyPair(keypair);
