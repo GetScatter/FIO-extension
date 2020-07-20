@@ -31,10 +31,22 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.7.12.tgz#7c6c571cc2f3f3ac4a59a5f2bd48f5bdbc8653cc"
   integrity sha512-KPYGmfD0/b1eXurQ59fXD1GBzhSQfz6/lKBxkaHX9dKTzjXbK68Zt7yGUxUsCS1jeTy/8aL+d9JEr+S54mpkWQ==
 
-"@walletpack/core@^1.0.41", "@walletpack/core@^1.0.42":
+"@walletpack/core@^1.0.41":
   version "1.0.41"
   resolved "https://registry.yarnpkg.com/@walletpack/core/-/core-1.0.41.tgz#4aee7bf7a4c3c5e511f71a84765450c479925399"
   integrity sha512-iOrvc5ZCsLLho3+F1Nx0mIj0mCZT6mJmnh3S54IQ1/Z3h3cN5DkLU6gyy0JxMX9dRYnLHmqUYjVkdjr1o1Z20w==
+  dependencies:
+    aes-oop "^1.0.4"
+    bignumber.js "^9.0.0"
+    bip39 "^2.6.0"
+    eosjs-ecc "^4.0.4"
+    qrcode "^1.4.1"
+    scrypt-async "^2.0.1"
+
+"@walletpack/core@^1.0.42":
+  version "1.0.50"
+  resolved "https://registry.yarnpkg.com/@walletpack/core/-/core-1.0.50.tgz#a89c6c98a9d39dc07d47cb05cf3612c1b4c9af69"
+  integrity sha512-mA5/WKuY/DoudYSapdf1k9t11/FiOqtIkgZITwg0igJMwYBXUkTKPFh4ny76RiCadug7NUuDcdW+gpR81weFUA==
   dependencies:
     aes-oop "^1.0.4"
     bignumber.js "^9.0.0"
@@ -3391,9 +3403,9 @@ lodash.uniq@^4.5.0:
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
 lodash@^4.0.0, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.4, lodash@~4.17.12:
-  version "4.17.15"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
-  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+  version "4.17.19"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
+  integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
 
 long@^4.0.0:
   version "4.0.0"
