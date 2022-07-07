@@ -31,10 +31,22 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.7.12.tgz#7c6c571cc2f3f3ac4a59a5f2bd48f5bdbc8653cc"
   integrity sha512-KPYGmfD0/b1eXurQ59fXD1GBzhSQfz6/lKBxkaHX9dKTzjXbK68Zt7yGUxUsCS1jeTy/8aL+d9JEr+S54mpkWQ==
 
-"@walletpack/core@^1.0.41", "@walletpack/core@^1.0.42":
+"@walletpack/core@^1.0.41":
   version "1.0.41"
   resolved "https://registry.yarnpkg.com/@walletpack/core/-/core-1.0.41.tgz#4aee7bf7a4c3c5e511f71a84765450c479925399"
   integrity sha512-iOrvc5ZCsLLho3+F1Nx0mIj0mCZT6mJmnh3S54IQ1/Z3h3cN5DkLU6gyy0JxMX9dRYnLHmqUYjVkdjr1o1Z20w==
+  dependencies:
+    aes-oop "^1.0.4"
+    bignumber.js "^9.0.0"
+    bip39 "^2.6.0"
+    eosjs-ecc "^4.0.4"
+    qrcode "^1.4.1"
+    scrypt-async "^2.0.1"
+
+"@walletpack/core@^1.0.42":
+  version "1.0.51"
+  resolved "https://registry.yarnpkg.com/@walletpack/core/-/core-1.0.51.tgz#da6bf0975ee887dab0bb7ae7b134fa751dc43ea2"
+  integrity sha512-hjLQJ+dLYdF//meqJQ6kf2BZI28oECmo6J68gDtjnubFdHNnQqtOb/lb9V8dLLrU7tmzTZfaL7Izjyo064TNCQ==
   dependencies:
     aes-oop "^1.0.4"
     bignumber.js "^9.0.0"
@@ -3722,9 +3734,9 @@ mkdirp@^0.5.0, mkdirp@^0.5.1:
     minimist "0.0.8"
 
 moment@^2.11.1:
-  version "2.24.0"
-  resolved "https://registry.yarnpkg.com/moment/-/moment-2.24.0.tgz#0d055d53f5052aa653c9f6eb68bb5d12bf5c2b5b"
-  integrity sha512-bV7f+6l2QigeBBZSM/6yTNq4P2fNpSWj/0e7jQcy87A8e7o2nAfP/34/2ky5Vw4B9S446EtIhodAzkFCcR4dQg==
+  version "2.29.4"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.4.tgz#3dbe052889fe7c1b2ed966fcb3a77328964ef108"
+  integrity sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==
 
 move-concurrently@^1.0.1:
   version "1.0.1"
