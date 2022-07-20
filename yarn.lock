@@ -31,10 +31,22 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.7.12.tgz#7c6c571cc2f3f3ac4a59a5f2bd48f5bdbc8653cc"
   integrity sha512-KPYGmfD0/b1eXurQ59fXD1GBzhSQfz6/lKBxkaHX9dKTzjXbK68Zt7yGUxUsCS1jeTy/8aL+d9JEr+S54mpkWQ==
 
-"@walletpack/core@^1.0.41", "@walletpack/core@^1.0.42":
+"@walletpack/core@^1.0.41":
   version "1.0.41"
   resolved "https://registry.yarnpkg.com/@walletpack/core/-/core-1.0.41.tgz#4aee7bf7a4c3c5e511f71a84765450c479925399"
   integrity sha512-iOrvc5ZCsLLho3+F1Nx0mIj0mCZT6mJmnh3S54IQ1/Z3h3cN5DkLU6gyy0JxMX9dRYnLHmqUYjVkdjr1o1Z20w==
+  dependencies:
+    aes-oop "^1.0.4"
+    bignumber.js "^9.0.0"
+    bip39 "^2.6.0"
+    eosjs-ecc "^4.0.4"
+    qrcode "^1.4.1"
+    scrypt-async "^2.0.1"
+
+"@walletpack/core@^1.0.42":
+  version "1.0.51"
+  resolved "https://registry.yarnpkg.com/@walletpack/core/-/core-1.0.51.tgz#da6bf0975ee887dab0bb7ae7b134fa751dc43ea2"
+  integrity sha512-hjLQJ+dLYdF//meqJQ6kf2BZI28oECmo6J68gDtjnubFdHNnQqtOb/lb9V8dLLrU7tmzTZfaL7Izjyo064TNCQ==
   dependencies:
     aes-oop "^1.0.4"
     bignumber.js "^9.0.0"
@@ -1226,9 +1238,9 @@ buffer-crc32@~0.2.3:
   integrity sha1-DTM+PwDqxQqhRUq9MO+MKl2ackI=
 
 buffer-from@^1.0.0:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/buffer-from/-/buffer-from-1.1.1.tgz#32713bc028f75c02fdb710d7c7bcec1f2c6070ef"
-  integrity sha512-MQcXEUbCKtEo7bhqEs6560Hyd4XaovZlO/k9V3hjVUF/zwW7KBVdSK4gIt/bzwS9MbR5qob+F5jusZsb0YQK2A==
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/buffer-from/-/buffer-from-1.1.2.tgz#2b146a6fd72e80b4f55d255f35ed59a3a9a41bd5"
+  integrity sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==
 
 buffer-xor@^1.0.2, buffer-xor@^1.0.3:
   version "1.0.3"
@@ -5284,9 +5296,9 @@ source-map-support@^0.4.15:
     source-map "^0.5.6"
 
 source-map-support@~0.5.12:
-  version "0.5.13"
-  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.13.tgz#31b24a9c2e73c2de85066c0feb7d44767ed52932"
-  integrity sha512-SHSKFHadjVA5oR4PPqhtAVdcBWwRYVd6g6cAXnIbRiIwc2EhPrTuKUBdSLvlEKyIP3GCf89fltvcZiP9MMFA1w==
+  version "0.5.21"
+  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.21.tgz#04fe7c7f9e1ed2d662233c28cb2b35b9f63f6e4f"
+  integrity sha512-uBHU3L3czsIyYXKX88fdrGovxdSCoTGDRZ6SYXtSRxLZUzHg5P/66Ht6uoUlHu9EZod+inXhKo3qQgwXUT/y1w==
   dependencies:
     buffer-from "^1.0.0"
     source-map "^0.6.0"
@@ -5614,9 +5626,9 @@ terser-webpack-plugin@^2.1.3:
     webpack-sources "^1.4.3"
 
 terser@^4.1.2, terser@^4.3.8:
-  version "4.3.9"
-  resolved "https://registry.yarnpkg.com/terser/-/terser-4.3.9.tgz#e4be37f80553d02645668727777687dad26bbca8"
-  integrity sha512-NFGMpHjlzmyOtPL+fDw3G7+6Ueh/sz4mkaUYa4lJCxOPTNzd0Uj0aZJOmsDYoSQyfuVoWDMSWTPU3huyOm2zdA==
+  version "4.8.1"
+  resolved "https://registry.yarnpkg.com/terser/-/terser-4.8.1.tgz#a00e5634562de2239fd404c649051bf6fc21144f"
+  integrity sha512-4GnLC0x667eJG0ewJTa6z/yXrbLGv80D9Ru6HIpCQmO+Q4PfEtBFi0ObSckqwL6VyQv/7ENJieXHo2ANmdQwgw==
   dependencies:
     commander "^2.20.0"
     source-map "~0.6.1"
